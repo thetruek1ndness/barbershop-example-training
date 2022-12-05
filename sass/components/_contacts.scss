@@ -1,0 +1,49 @@
+.contacts {
+  width: calc(50% - 15px);
+  padding-left: 100px;
+}
+
+.contacts-title {
+  color: var(--bright-text-color);
+}
+
+.contacts-address {
+  margin-bottom: 70px;
+}
+
+.address-link {
+  display: block;
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: var(--second-text-color);
+}
+
+.contacts-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.contacts-item:last-child {
+  text-decoration: underline;
+}
+
+.contacts-link {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: var(--second-text-color);
+}
+
+.contact-schedule-title {
+  color: var(--bright-text-color);
+}
+
+.contacts-schedule-text {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: var(--second-text-color);
+}

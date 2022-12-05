@@ -1,0 +1,37 @@
+.about {
+  background-color: var(--primary-bg-color);
+}
+
+.about-container {
+  display: flex;
+}
+
+.about-list {
+  display: flex;
+  gap: 30px;
+}
+
+.about-wrap {
+  padding-left: 30px;
+  padding-right: 100px;
+}
+
+.about-suptitle {
+  color: var(--dark-text-color);
+}
+
+.about-title {
+  color: var(--dark-text-color);
+}
+
+.about-subtitle {
+  margin-bottom: 20px;
+}
+
+.about-text {
+  margin-bottom: 42px;
+
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+}

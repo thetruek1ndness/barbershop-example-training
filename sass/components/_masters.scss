@@ -1,0 +1,78 @@
+.masters {
+  background-color: var(--secondary-bg-color);
+}
+
+.masters-suptitle {
+  color: var(--dark-text-color);
+}
+
+.masters-title {
+  margin-bottom: 44px;
+
+  color: var(--dark-text-color);
+}
+
+.masters-list {
+  display: flex;
+  gap: 30px;
+}
+
+.masters-item {
+  flex-basis: calc((100% - 60px) / 3);
+}
+
+.masters-name {
+  margin-top: 30px;
+  margin-bottom: 8px;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.39;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--dark-text-color);
+}
+
+.masters-text {
+  margin-bottom: 30px;
+
+  font-size: 14px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social-item {
+  width: 44px;
+  height: 44px;
+}
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
+  background-color: var(--bright-bg-color);
+  border-radius: 50%;
+}
+
+.social-icon {
+  fill: var(--primary-icon-color);
+  transition: fill var(--hft);
+
+  .social-link:hover &,
+  .social-link:focus &{
+    fill: var(--accent-color);
+  }
+}
+
+

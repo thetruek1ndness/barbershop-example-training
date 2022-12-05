@@ -1,0 +1,192 @@
+.booking-contacts {
+  background-color: var(--third-bg-color);
+  background-image: url(../imgs/contacts.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: calc(50% - 15px) 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.booking-contacts > .container{
+  display: flex;
+}
+
+.booking {
+  width: calc(50% + 15px);
+  padding-right: 30px;
+}
+
+.booking-title {
+  color: var(--bright-text-color);
+  margin-bottom: 44px;
+}
+
+/* Andrii */
+.inputs-wrapper{
+  display: flex;
+  gap: 30px;
+  margin-bottom: 44px;
+}
+
+.booking-field{
+  position: relative;
+}
+
+.common-input{
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--bright-text-color);
+
+  border: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  outline: none;
+  background-color: transparent;
+
+  transition: border-color var(--hft);
+
+  .common-input:focus,
+  .common-input:hover,
+  .common-input:not(:placeholder-shown) {
+    border-color: var(--bright-bg-color);
+  }
+}
+
+.booking-input {
+  width: 270px;
+  height: 24px;
+}
+
+.common-label{
+  position: absolute;
+  left: 0;
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.4);
+
+  transition: transform var(--hft), color var(--hft);
+
+  .common-input:focus + &,
+  .common-input:hover + &,
+  .common-input:not(:placeholder-shown) + &{
+    transform: translateY(-100%);
+    color: var(--bright-text-color);
+  }
+}
+
+.message-field{
+  position: relative;
+
+  margin-bottom: 44px;
+}
+
+.booking-message {
+  height: 76px;
+  width: 100%;
+  resize: none;
+}
+
+.booking-send{
+  color: var(--bright-text-color);
+}
+
+/* Mine  */
+/* .booking-part{
+  position: relative;
+
+  width: 100%;
+  margin-bottom: 44px;
+}
+
+.booking-field{
+  position: relative;
+
+  display: inline-block;
+  width: calc(50% - 30px);
+}
+
+.booking-field:first-child{
+  margin-right: 30px;
+}
+
+.common-label{
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.4);
+
+  transition: color var(--hft);
+}
+
+.booking-label{
+  position: absolute;
+  left: 0px;
+  bottom: 8px;
+}
+
+.common-input{
+  width: 100%;
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--bright-text-color);
+
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  outline: none;
+  background-color: transparent;
+
+  transition: border-color var(--hft);
+}
+
+.booking-input{
+  display: inline-block;
+
+  padding-bottom: 8px;
+}
+
+.message-label{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.booking-message {
+  resize: none;
+
+  height: 75px;
+
+  padding-bottom: 8px;
+}
+
+.booking-input:hover + .booking-label,
+.booking-message:hover + .message-label,
+.booking-input:focus + .booking-label,
+.booking-message:focus + .message-label{
+  color: var(--bright-text-color);
+}
+
+.booking-input:focus,
+.booking-input:hover,
+.booking-message:focus,
+.booking-message:hover{
+  border-color: #ffffff;
+}
+
+.booking-send{
+  color: var(--bright-text-color);
+} */

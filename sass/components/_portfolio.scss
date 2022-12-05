@@ -1,0 +1,16 @@
+.portfolio {
+  background-color: var(--primary-bg-color);
+}
+
+.portfolio-suptitle {
+  margin-bottom: 44px;
+}
+
+.portfolio-list {
+  display: flex;
+  gap: 30px;
+}
+
+.porfolio-item {
+  flex-basis: calc((100% - 90px) / 4);
+}
