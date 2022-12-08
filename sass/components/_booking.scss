@@ -8,7 +8,7 @@
   margin: 0 auto;
 }
 
-.booking-contacts > .container{
+.booking-contacts__container {
   display: flex;
 }
 
@@ -17,23 +17,23 @@
   padding-right: 30px;
 }
 
-.booking-title {
+.booking__title {
   color: var(--bright-text-color);
   margin-bottom: 44px;
 }
 
 /* Andrii */
-.inputs-wrapper{
+.form__header {
   display: flex;
   gap: 30px;
   margin-bottom: 44px;
 }
 
-.booking-field{
+.form__field {
   position: relative;
 }
 
-.common-input{
+.input {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
@@ -48,19 +48,19 @@
 
   transition: border-color var(--hft);
 
-  .common-input:focus,
-  .common-input:hover,
-  .common-input:not(:placeholder-shown) {
+  &:focus,
+  &:hover,
+  &:not(:placeholder-shown) {
     border-color: var(--bright-bg-color);
   }
 }
 
-.booking-input {
+.form__input {
   width: 270px;
   height: 24px;
 }
 
-.common-label{
+.label {
   position: absolute;
   left: 0;
 
@@ -73,27 +73,27 @@
 
   transition: transform var(--hft), color var(--hft);
 
-  .common-input:focus + &,
-  .common-input:hover + &,
-  .common-input:not(:placeholder-shown) + &{
+  .input:focus + &,
+  .input:hover + &,
+  .input:not(:placeholder-shown) + & {
     transform: translateY(-100%);
     color: var(--bright-text-color);
   }
 }
 
-.message-field{
+.form__footer {
   position: relative;
 
   margin-bottom: 44px;
 }
 
-.booking-message {
+.form__message {
   height: 76px;
   width: 100%;
   resize: none;
 }
 
-.booking-send{
+.form__send-button {
   color: var(--bright-text-color);
 }
 

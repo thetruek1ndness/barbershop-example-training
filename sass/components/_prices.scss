@@ -8,24 +8,24 @@
   background-size: cover;
 }
 
-.prices-suptitle {
+.prices__suptitle {
   color: rgba(157, 164, 189, 0.6);
 }
 
-.prices-title {
+.prices__title {
   margin-bottom: 44px;
 
   color: var(--bright-text-color);
 }
 
-.prices-wrap {
+.prices__wrap {
   display: flex;
   justify-content: space-between;
   gap: 30px;
   margin-bottom: 44px;
 }
 
-.prices-list {
+.price-list {
   padding: 30px 20px;
   flex-basis: calc((100% - 30px) / 2);
 
@@ -38,7 +38,7 @@
   }
 }
 
-.prices-item {
+.price-list__item {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
@@ -55,7 +55,7 @@
   }
 }
 
-.prices-text {
+.price-list__text {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.67;
@@ -67,7 +67,7 @@
   }
 }
 
-.prices-btn {
+.prices__button {
   display: block;
   margin-right: auto;
   margin-left: auto;

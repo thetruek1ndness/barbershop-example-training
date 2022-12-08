@@ -2,11 +2,11 @@
   background-color: var(--secondary-bg-color);
 }
 
-.masters-suptitle {
+.masters__suptitle {
   color: var(--dark-text-color);
 }
 
-.masters-title {
+.masters__title {
   margin-bottom: 44px;
 
   color: var(--dark-text-color);
@@ -17,12 +17,15 @@
   gap: 30px;
 }
 
-.masters-item {
+.masters-list__item {
   flex-basis: calc((100% - 60px) / 3);
 }
 
-.masters-name {
+.masters-list__card-footer{
   margin-top: 30px;
+}
+
+.masters-list__name {
   margin-bottom: 8px;
 
   font-weight: 400;
@@ -33,7 +36,7 @@
   color: var(--dark-text-color);
 }
 
-.masters-text {
+.masters-list__text {
   margin-bottom: 30px;
 
   font-size: 14px;
@@ -49,12 +52,12 @@
   gap: 10px;
 }
 
-.social-item {
+.socials__item {
   width: 44px;
   height: 44px;
 }
 
-.social-link {
+.socials__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -65,12 +68,12 @@
   border-radius: 50%;
 }
 
-.social-icon {
+.socials__icon {
   fill: var(--primary-icon-color);
   transition: fill var(--hft);
 
-  .social-link:hover &,
-  .social-link:focus &{
+  .socials__link:hover &,
+  .socials__link:focus &{
     fill: var(--accent-color);
   }
 }

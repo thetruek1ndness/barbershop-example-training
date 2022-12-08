@@ -2,33 +2,33 @@
   background-color: var(--primary-bg-color);
 }
 
-.about-container {
+.about__container {
   display: flex;
 }
 
-.about-list {
+.about__list {
   display: flex;
   gap: 30px;
 }
 
-.about-wrap {
+.about__wrap {
   padding-left: 30px;
   padding-right: 100px;
 }
 
-.about-suptitle {
+.about__suptitle {
   color: var(--dark-text-color);
 }
 
-.about-title {
+.about__title {
   color: var(--dark-text-color);
 }
 
-.about-subtitle {
+.about__subtitle {
   margin-bottom: 20px;
 }
 
-.about-text {
+.about__text {
   margin-bottom: 42px;
 
   font-size: 14px;

@@ -3,15 +3,15 @@
   padding-left: 100px;
 }
 
-.contacts-title {
+.contacts__title {
   color: var(--bright-text-color);
 }
 
-.contacts-address {
+.contacts__address {
   margin-bottom: 70px;
 }
 
-.address-link {
+.contacts__geoposition {
   display: block;
   margin-bottom: 20px;
 
@@ -22,26 +22,26 @@
   color: var(--second-text-color);
 }
 
-.contacts-item:not(:last-child) {
+.contacts__item:not(:last-child) {
   margin-bottom: 20px;
 }
 
-.contacts-item:last-child {
+.contacts__item:last-child {
   text-decoration: underline;
 }
 
-.contacts-link {
+.contacts__link {
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: var(--second-text-color);
 }
 
-.contact-schedule-title {
+.contacts__schedule-title {
   color: var(--bright-text-color);
 }
 
-.contacts-schedule-text {
+.contacts__schedule-text {
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: 0.02em;

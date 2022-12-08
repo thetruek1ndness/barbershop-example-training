@@ -2,15 +2,15 @@
   background-color: var(--primary-bg-color);
 }
 
-.portfolio-suptitle {
+.portfolio__suptitle {
   margin-bottom: 44px;
 }
 
-.portfolio-list {
+.portfolio__list {
   display: flex;
   gap: 30px;
 }
 
-.porfolio-item {
+.porfolio__item {
   flex-basis: calc((100% - 90px) / 4);
 }
