@@ -439,6 +439,7 @@ image {
 
 .prices {
   max-width: 1600px;
+  margin: 0 auto;
   background-color: #111319;
   background-image: url(../imgs/prices.png);
   background-repeat: no-repeat;
