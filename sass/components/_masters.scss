@@ -1,5 +1,12 @@
 .masters {
   background-color: var(--secondary-bg-color);
+
+  >.container{
+    @include tablet-only{
+      padding-left: 159px;
+      padding-right: 159px;
+    }
+  }
 }
 
 .masters__suptitle {
@@ -14,11 +21,24 @@
 
 .masters-list {
   display: flex;
+  flex-direction: column;
   gap: 30px;
+
+  @include desktop{
+    flex-direction: row;
+  }
 }
 
-.masters-list__item {
-  flex-basis: calc((100% - 60px) / 3);
+.masters-list__item{
+  flex-basis: 100%;
+
+  @include tablet{
+    flex-basis: content;
+  }
+
+  @include desktop{
+    flex-basis: calc((100% - 60px) / 3);
+  }
 }
 
 .masters-list__card-footer{
