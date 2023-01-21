@@ -11,12 +11,12 @@
   flex-direction: column;
   gap: 30px;
 
-  @include tablet{
+  @include tablet {
     flex-direction: row;
     flex-wrap: wrap;
   }
 
-  @include desktop{
+  @include desktop {
     flex-wrap: nowrap;
   }
 }
@@ -24,10 +24,10 @@
 .portfolio__item {
   flex-basis: 100%;
 
-  @include tablet{
-    flex-basis: calc((100% - 30px) / 2);
+  @include tablet {
+    flex-basis: calc(50% - 30px);
   }
-  @include desktop{
-    flex-basis: calc((100% - 90px) / 4);
+  @include desktop {
+    flex-basis: calc(25% - 30px);
   }
 }

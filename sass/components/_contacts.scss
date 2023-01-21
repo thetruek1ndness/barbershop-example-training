@@ -1,29 +1,51 @@
-// .contacts {
-//   width: calc(50% - 15px);
-//   padding-left: 100px;
-// }
+.contacts {
+  @media screen and (max-width:1199px){
+    background-color: var(--third-bg-color);
+    background-image: url(../../imgs/contacts/contacts-mob.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
-.contacts{
-  background-color: var(--third-bg-color);
-  background-image: url(../../imgs/contacts/contacts-mob.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  @include retina{
-    background-image: url(../../imgs/contacts/contacts-mob@2.png);
-  }
-
-  @include tablet{
-    background-image: url(../../imgs/contacts/contacts-tab.png);
-    @include retina{
-      background-image: url(../../imgs/contacts/contacts-tab@2.png);
+    @include retina {
+      background-image: url(../../imgs/contacts/contacts-mob@2.png);
     }
+  
+    @include tablet {
+      background-image: url(../../imgs/contacts/contacts-tab.png);
+      @include retina {
+        background-image: url(../../imgs/contacts/contacts-tab@2.png);
+      }
+    }
+  }
+  
+  @include desktop{
+    width: calc(50% - 15px);
+    padding-left: 100px;
+  }
+}
+
+.contacts__container{
+  @include desktop{
+    width: auto;
+    padding: 0;
+    margin: 0;
   }
 }
 
 .contacts__title {
   color: var(--bright-text-color);
   text-align: center;
+
+  @include tablet{
+    text-align: left;
+  }
+}
+
+.contacts__wrapper{
+  @include tablet-only{
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .contacts__address {
@@ -31,9 +53,9 @@
 }
 
 .contacts__geoposition {
-  position: relative;
-  
-  display: block;
+  display: flex;
+  gap: 16px;
+  align-items: center;
   margin-bottom: 20px;
 
   font-weight: 700;
@@ -41,12 +63,6 @@
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: var(--second-text-color);
-
-  &::before{
-    position: absolute;
-    display: block;
-    background-image: url(../../imgs/icons.svg#contacts-map);
-  }
 }
 
 .contacts__item:not(:last-child) {
@@ -58,6 +74,10 @@
 }
 
 .contacts__link {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: 0.02em;

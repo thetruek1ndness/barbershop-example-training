@@ -4,21 +4,37 @@
 
 .features__container {
   display: flex;
-  padding-left: 100px;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 44px;
+
+  @include desktop {
+    flex-direction: row;
+    align-items: stretch;
+    gap: 130px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
 }
 
 .feature-list {
   display: flex;
   flex-wrap: wrap;
-  flex-shrink: 0;
-  width: 370px;
-  margin-right: 130px;
+
+  @include tablet-only {
+    justify-content: center;
+    max-width: 450px;
+  }
+
+  @include desktop {
+    max-width: 370px;
+  }
 }
 
 .feature-list__item {
-  padding: 20px 24px;
-  width: 170px;
+  flex-basis: calc((100% - 30px) / 2);
   height: 133px;
+  padding: 20px;
 
   text-align: center;
 
@@ -27,11 +43,25 @@
   &:nth-child(odd) {
     margin-right: 30px;
   }
-  
+
   &:nth-child(even) {
     margin-top: 30px;
   }
-  
+
+  @include mobile {
+    padding: 20px 35px;
+    flex-basis: 193px;
+  }
+
+  @include tablet {
+    padding: 20px 44px;
+    flex-basis: 210px;
+  }
+
+  @include desktop {
+    padding: 20px 24px;
+    flex-basis: 170px;
+  }
 }
 
 .feature-list__span {
@@ -40,7 +70,6 @@
   font-weight: 700;
   font-size: 42px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.05em;
   color: var(--dark-text-color);
 }
@@ -75,6 +104,7 @@
 
 .features__title {
   color: var(--dark-text-color);
+  margin-bottom: 20px;
 }
 
 .features__text {

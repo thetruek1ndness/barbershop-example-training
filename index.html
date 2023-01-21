@@ -20,17 +20,18 @@
     />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
-  <body>
+  <body data-body>
     <!----------------- HEADER ---------------------->
 
-    <!-- <header class="header">
+    <header class="header">
       <div class="header__wrap container">
         <a href="#" class="logo header__logo">
           <svg class="logo__icon" width="69" height="55">
             <use href="./imgs/icons.svg#logo"></use>
           </svg>
         </a>
-        <nav class="nav header__nav">
+
+        <nav class="nav">
           <ul class="nav__list list">
             <li class="nav__item">
               <a class="nav__link link" href="#about">About</a>
@@ -46,18 +47,88 @@
             </li>
           </ul>
         </nav>
-        <a class="header__tel link" href="tel:+380441111111"
-          >+38 044 111 11 11</a
-        >
-        <button class="header__btn button" type="button" data-modal-open>
-          online-booking
+
+        <div class="header__block">
+          <a class="header__tel link" href="tel:+380441111111"
+            >+38 044 111 11 11</a
+          >
+          <button class="header__btn button" type="button">
+            online-booking
+          </button>
+        </div>
+
+        <button class="mobile-menu__open-button" type="button" data-menu-open>
+          <svg class="mobile-menu__open-icon" width="40" height="40">
+            <use href="./imgs/icons.svg#mob-menu"></use>
+          </svg>
         </button>
+
+        <div class="mobile-menu is-closed" data-menu>
+          <button
+            class="mobile-menu__close-button"
+            type="button"
+            data-menu-close
+          >
+            <svg class="mobile-menu__close-icon" width="40" height="40">
+              <use href="./imgs/icons.svg#close-menu"></use>
+            </svg>
+          </button>
+
+          <nav class="mobile-menu__nav">
+            <ul class="mobile-menu__list list">
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link link" href="#about">About</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link link" href="#prices"
+                  >Services and prices</a
+                >
+              </li>
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link link" href="#barbers">Barbers</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link link" href="#contacts">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="mobile-menu__block">
+            <a class="mobile-menu__link link" href="tel:+380441111111"
+              >+38 044 111 11 11</a
+            >
+            <button class="mobile-menu__btn button" type="button">
+              online-booking
+            </button>
+          </div>
+
+          <ul class="mobile-menu__soc-list list">
+            <li class="soc-list__item">
+              <a
+                class="soc-list__link link"
+                href="#"
+                target="_blank"
+                rel="noopener nofollow norefferer"
+                >Instagram</a
+              >
+            </li>
+            <li class="soc-list__item">
+              <a
+                class="soc-list__link link"
+                href="#"
+                target="_blank"
+                rel="noopener nofollow norefferer"
+                >YouTube</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
-    </header> -->
+    </header>
 
     <main>
       <!----------------- HERO ----------------------->
-      <!-- <section class="hero">
+      <section class="hero" id="top">
         <div class="hero__container container">
           <div class="hero__wrapper">
             <ul class="soc-list list">
@@ -90,22 +161,30 @@
             </p>
           </div>
         </div>
-      </section> -->
 
-      <!----------------- ABOUT ---------------------->
-      <!-- <section class="about section" id="about">
+        <a class="goup-btn link" href="#top">
+          up
+        </a>
+
+      </section>
+
+      <!----------------- ABOUT DONE---------------------->
+      <section class="about section" id="about">
         <div class="about__container container">
           <ul class="about__list list">
             <li class="about__item">
               <picture>
-  <source srcset="" media="" sizes="" type="" />
-  <source srcset="" media="" sizes="" type="" />
-  <img src="" alt="" />
-</picture>
-              <img src="./imgs/about-1.jpg" alt="beard" />
+                <source srcset="./imgs/about/about-01-tab.jpg 1x, ./imgs/about/about-01-tab@2.jpg 2x" media="(max-width: 1199px)" />
+                <source srcset="./imgs/about/about-01-desktop.jpg 1x, ./imgs/about/about-01-desktop@2.jpg 2x" media="(min-width: 1200px)" />
+                <img src="./imgs/about/about-01-tab.jpg" alt="barber shaving beard" width="330" />
+              </picture>
             </li>
             <li class="about__item">
-              <img src="./imgs/about-2.jpg" alt="haircut" />
+              <picture>
+                <source srcset="./imgs/about/about-02-tab.jpg 1x, ./imgs/about/about-02-tab@2.jpg 2x" media="(max-width: 1199px)" />
+                <source srcset="./imgs/about/about-02-desktop.jpg 1x, ./imgs/about/about-02-desktop@2.jpg 2x" media="(min-width: 1200px)" />
+                <img src="./imgs/about/about-02-tab.jpg" alt="barber shaving beard" width="330" />
+              </picture>
             </li>
           </ul>
           <div class="about__wrap">
@@ -129,10 +208,10 @@
             </button>
           </div>
         </div>
-      </section> -->
+      </section>
 
-      <!-- --------------- PRICES ---------------------->
-      <!-- <section class="prices section" id="prices">
+      <!-- --------------- PRICES DONE---------------------->
+      <section class="prices section" id="prices">
         <div class="container">
           <p class="prices__suptitle suptitle">
             Spend your time with the best masters
@@ -180,10 +259,10 @@
             online-booking
           </button>
         </div>
-      </section> -->
+      </section>
 
-      <!----------------- FEATURES ---------------------->
-      <!-- <section class="features section">
+      <!----------------- FEATURES DONE ---------------------->
+      <section class="features section">
         <div class="features__container container">
           <ul class="feature-list list">
             <li class="feature-list__item">
@@ -220,10 +299,10 @@
             </p>
           </div>
         </div>
-      </section> -->
+      </section>
 
       <!----------------- MASTERS DONE ---------------------->
-      <!-- <section class="masters section" id="barbers">
+      <section class="masters section" id="barbers">
         <div class="container">
           <span class="masters__suptitle suptitle"
             >For true enjoyers of the atmosphere</span
@@ -232,10 +311,32 @@
           <ul class="masters-list list">
             <li class="masters-list__item">
               <picture>
-                <source media="(max-width: 767px)" srcset="./imgs/masters/masters-01-mob.jpg 1x, ./imgs/masters/masters-01-mob@2.jpg 2x">
-                <source media="(min-width: 768px)" srcset="./imgs/masters/masters-01-tab.jpg 1x, ./imgs/masters/masters-01-tab@2.jpg 2x">
-                <source media="(min-width: 1200px)" srcset="./imgs/masters/masters-01-desktop.jpg 1x, ./imgs/masters/masters-01-desktop@2.jpg 2x">
-                <img src="./imgs/masters/masters-01-tab.jpg" alt="barber doing haircut" width="450">
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./imgs/masters/masters-01-mob.jpg   1x,
+                    ./imgs/masters/masters-01-mob@2.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./imgs/masters/masters-01-tab.jpg   1x,
+                    ./imgs/masters/masters-01-tab@2.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./imgs/masters/masters-01-desktop.jpg   1x,
+                    ./imgs/masters/masters-01-desktop@2.jpg 2x
+                  "
+                />
+                <img
+                  src="./imgs/masters/masters-01-tab.jpg"
+                  alt="barber doing haircut"
+                  width="450"
+                />
               </picture>
               <div class="masters-list__card-footer">
                 <h3 class="masters-list__name">John Smith</h3>
@@ -295,10 +396,32 @@
 
             <li class="masters-list__item">
               <picture>
-                <source media="(max-width: 767px)" srcset="./imgs/masters/masters-02-mob.jpg 1x, ./imgs/masters/masters-02-mob@2.jpg 2x">
-                <source media="(min-width: 768px)" srcset="./imgs/masters/masters-02-tab.jpg 1x, ./imgs/masters/masters-02-tab@2.jpg 2x">
-                <source media="(min-width: 1200px)" srcset="./imgs/masters/masters-02-desktop.jpg 1x, ./imgs/masters/masters-02-desktop@2.jpg 2x">
-                <img src="./imgs/masters/masters-02-tab.jpg" alt="barber doing haircut" width="450">
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./imgs/masters/masters-02-mob.jpg   1x,
+                    ./imgs/masters/masters-02-mob@2.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./imgs/masters/masters-02-tab.jpg   1x,
+                    ./imgs/masters/masters-02-tab@2.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./imgs/masters/masters-02-desktop.jpg   1x,
+                    ./imgs/masters/masters-02-desktop@2.jpg 2x
+                  "
+                />
+                <img
+                  src="./imgs/masters/masters-02-tab.jpg"
+                  alt="barber doing haircut"
+                  width="450"
+                />
               </picture>
               <div class="masters-list__card-footer">
                 <h3 class="masters-list__name">Michele Doe</h3>
@@ -358,10 +481,32 @@
 
             <li class="masters-list__item">
               <picture>
-                <source media="(max-width: 767px)" srcset="./imgs/masters/masters-03-mob.jpg 1x, ./imgs/masters/masters-03-mob@2.jpg 2x">
-                <source media="(min-width: 768px)" srcset="./imgs/masters/masters-03-tab.jpg 1x, ./imgs/masters/masters-03-tab@2.jpg 2x">
-                <source media="(min-width: 1200px)" srcset="./imgs/masters/masters-03-desktop.jpg 1x, ./imgs/masters/masters-03-desktop@2.jpg 2x">
-                <img src="./imgs/masters/masters-03-tab.jpg" alt="barber doing haircut" width="450">
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./imgs/masters/masters-03-mob.jpg   1x,
+                    ./imgs/masters/masters-03-mob@2.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./imgs/masters/masters-03-tab.jpg   1x,
+                    ./imgs/masters/masters-03-tab@2.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./imgs/masters/masters-03-desktop.jpg   1x,
+                    ./imgs/masters/masters-03-desktop@2.jpg 2x
+                  "
+                />
+                <img
+                  src="./imgs/masters/masters-03-tab.jpg"
+                  alt="barber doing haircut"
+                  width="450"
+                />
               </picture>
               <div class="masters-list__card-footer">
                 <h3 class="masters-list__name">Alan Black</h3>
@@ -420,10 +565,10 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!----------------- PORTFOLIO DONE---------------------->
-      <!-- <section class="portfolio section">
+      <section class="portfolio section">
         <div class="container">
           <p class="portfolio__suptitle suptitle">
             In Latin, "barba" means "beard"
@@ -432,44 +577,132 @@
           <ul class="portfolio__list list">
             <li class="portfolio__item">
               <picture>
-                <source media="(max-width:767px)" srcset="./imgs/portfolio/portfolio-01-mob.jpg 1x, ./imgs/portfolio/portfolio-01-mob@2.jpg 2x"/>
-                <source media="(min-width:768px)" srcset="./imgs/portfolio/portfolio-01-tab.jpg 1x, ./imgs/portfolio/portfolio-01-tab@2.jpg 2x"/>
-                <source media="(min-width:1200px)" srcset="./imgs/portfolio/portfolio-01-desktop.jpg 1x, ./imgs/portfolio/portfolio-01-desktop@2.jpg 2x"/>
-                <img src="./imgs/portfolio/portfolio-01-mob.jpg" alt="barber doing haircut" width="418"/>
+                <source
+                  media="(min-width:1200px)"
+                  srcset="
+                    ./imgs/portfolio/portfolio-01-desktop.jpg   1x,
+                    ./imgs/portfolio/portfolio-01-desktop@2.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    ./imgs/portfolio/portfolio-01-tab.jpg   1x,
+                    ./imgs/portfolio/portfolio-01-tab@2.jpg 2x
+                  "
+                />
+                <source
+                  media="(max-width:767px)"
+                  srcset="
+                    ./imgs/portfolio/portfolio-01-mob.jpg   1x,
+                    ./imgs/portfolio/portfolio-01-mob@2.jpg 2x
+                  "
+                />
+                <img
+                  src="./imgs/portfolio/portfolio-01-mob.jpg"
+                  alt="barber doing haircut"
+                  width="418"
+                />
               </picture>
             </li>
-            <li class="portfolio-item">
+            <li class="portfolio__item">
               <picture>
-                <source media="(max-width:767px)" srcset="./imgs/portfolio/portfolio-02-mob.jpg 1x, ./imgs/portfolio/portfolio-02-mob@2.jpg 2x"/>
-                <source media="(min-width:768px)" srcset="./imgs/portfolio/portfolio-02-tab.jpg 1x, ./imgs/portfolio/portfolio-02-tab@2.jpg 2x"/>
-                <source media="(min-width:1200px)" srcset="./imgs/portfolio/portfolio-02-desktop.jpg 1x, ./imgs/portfolio/portfolio-02-desktop@2.jpg 2x"/>
-                <img src="./imgs/portfolio/portfolio-02-mob.jpg" alt="barber doing haircut" width="418"/>
+                <source
+                  media="(min-width:1200px)"
+                  srcset="
+                    ./imgs/portfolio/portfolio-02-desktop.jpg   1x,
+                    ./imgs/portfolio/portfolio-02-desktop@2.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    ./imgs/portfolio/portfolio-02-tab.jpg   1x,
+                    ./imgs/portfolio/portfolio-02-tab@2.jpg 2x
+                  "
+                />
+                <source
+                  media="(max-width:767px)"
+                  srcset="
+                    ./imgs/portfolio/portfolio-02-mob.jpg   1x,
+                    ./imgs/portfolio/portfolio-02-mob@2.jpg 2x
+                  "
+                />
+                <img
+                  src="./imgs/portfolio/portfolio-02-mob.jpg"
+                  alt="barber doing haircut"
+                  width="418"
+                />
               </picture>
             </li>
-            <li class="portfolio-item">
+            <li class="portfolio__item">
               <picture>
-                <source media="(max-width:767px)" srcset="./imgs/portfolio/portfolio-03-mob.jpg 1x, ./imgs/portfolio/portfolio-03-mob@2.jpg 2x"/>
-                <source media="(min-width:768px)" srcset="./imgs/portfolio/portfolio-03-tab.jpg 1x, ./imgs/portfolio/portfolio-03-tab@2.jpg 2x"/>
-                <source media="(min-width:1200px)" srcset="./imgs/portfolio/portfolio-03-desktop.jpg 1x, ./imgs/portfolio/portfolio-03-desktop@2.jpg 2x"/>
-                <img src="./imgs/portfolio/portfolio-03-mob.jpg" alt="barber doing haircut" width="418"/>
+                <source
+                  media="(min-width:1200px)"
+                  srcset="
+                    ./imgs/portfolio/portfolio-03-desktop.jpg   1x,
+                    ./imgs/portfolio/portfolio-03-desktop@2.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    ./imgs/portfolio/portfolio-03-tab.jpg   1x,
+                    ./imgs/portfolio/portfolio-03-tab@2.jpg 2x
+                  "
+                />
+                <source
+                  media="(max-width:767px)"
+                  srcset="
+                    ./imgs/portfolio/portfolio-03-mob.jpg   1x,
+                    ./imgs/portfolio/portfolio-03-mob@2.jpg 2x
+                  "
+                />
+                <img
+                  src="./imgs/portfolio/portfolio-03-mob.jpg"
+                  alt="barber doing haircut"
+                  width="418"
+                />
               </picture>
             </li>
-            <li class="portfolio-item">
+            <li class="portfolio__item">
               <picture>
-                <source media="(max-width:767px)" srcset="./imgs/portfolio/portfolio-04-mob.jpg 1x, ./imgs/portfolio/portfolio-04-mob@2.jpg 2x"/>
-                <source media="(min-width:768px)" srcset="./imgs/portfolio/portfolio-04-tab.jpg 1x, ./imgs/portfolio/portfolio-04-tab@2.jpg 2x"/>
-                <source media="(min-width:1200px)" srcset="./imgs/portfolio/portfolio-04-desktop.jpg 1x, ./imgs/portfolio/portfolio-04-desktop@2.jpg 2x"/>
-                <img src="./imgs/portfolio/portfolio-04-mob.jpg" alt="barber doing haircut" width="418"/>
+                <source
+                  media="(min-width:1200px)"
+                  srcset="
+                    ./imgs/portfolio/portfolio-04-desktop.jpg   1x,
+                    ./imgs/portfolio/portfolio-04-desktop@2.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    ./imgs/portfolio/portfolio-04-tab.jpg   1x,
+                    ./imgs/portfolio/portfolio-04-tab@2.jpg 2x
+                  "
+                />
+                <source
+                  media="(max-width:767px)"
+                  srcset="
+                    ./imgs/portfolio/portfolio-04-mob.jpg   1x,
+                    ./imgs/portfolio/portfolio-04-mob@2.jpg 2x
+                  "
+                />
+                <img
+                  src="./imgs/portfolio/portfolio-04-mob.jpg"
+                  alt="barber doing haircut"
+                  width="418"
+                />
               </picture>
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
-      <!----------------- BOOKING-CONTACTS ---------------------->
-      
-          <!------------------ BOOKING DO DESKTOP ------------------------>
-          <!-- <section class="booking section">
+      <!----------------- BOOKING-CONTACTS DONE---------------------->
+      <div class="booking-contacts">
+        <div class="booking-contacts__container">
+          <section class="booking section">
             <div class="booking__container container">
               <h2 class="booking__title section__title">Online-booking</h2>
               <form class="form">
@@ -487,7 +720,7 @@
                       >Name*</label
                     >
                   </div>
-  
+
                   <div class="form__field">
                     <input
                       class="form__input input"
@@ -502,7 +735,7 @@
                     >
                   </div>
                 </div>
-  
+
                 <div class="form__footer">
                   <textarea
                     class="form__message input"
@@ -514,44 +747,60 @@
                     >Message</label
                   >
                 </div>
-  
+
                 <button type="submit" class="form__send-button button">
                   Send
                 </button>
               </form>
-            </div >
-          </section> -->
-
-          <!------------------ CONTACTS DO DESKTOP ------------------------>
+            </div>
+          </section>
           <section class="contacts section" id="contacts">
-              <div class="contacts__container container">
-                <h2 class="contacts__title section__title">Contacts</h2>
+            <div class="contacts__container container">
+              <h2 class="contacts__title section__title">Contacts</h2>
+              <div class="contacts__wrapper">
                 <address class="contacts__address">
                   <a class="contacts__geoposition link" href=""
-                    >st. Vasylkivska, 7A Kyiv, 08132
+                    ><svg class="contacts__icon" width="24" height="24">
+                      <use href="./imgs/icons.svg#contacts-map"></use>
+                    </svg>
+                    st. Vasylkivska, 7A Kyiv, 08132
                   </a>
                   <ul class="contacts__list list">
                     <li class="contacts__item">
                       <a class="contacts__link link" href="tel:+380441111111"
-                        >+38 044 111 11 11</a
+                        ><svg class="contacts__icon" width="24" height="24">
+                          <use href="./imgs/icons.svg#contacts-phone"></use>
+                        </svg>
+                        +38 044 111 11 11</a
                       >
                     </li>
                     <li class="contacts__item">
                       <a
                         class="contacts__link link"
                         href="mailto:barbershop@email.com"
-                        >barbershop@email.com</a
+                        ><svg class="contacts__icon" width="24" height="24">
+                          <use href="./imgs/icons.svg#contacts-envelope"></use>
+                        </svg>
+                        barbershop@email.com</a
                       >
                     </li>
                   </ul>
                 </address>
-                <p class="contacts__schedule-title suptitle">Working hours</p>
-                <p class="contacts__schedule-text">Every day from 9:00 to 22:00</p>
-              </div >
-            </section> 
+                <div class="contacts__shedule">
+                  <p class="contacts__schedule-title suptitle">Working hours</p>
+                  <p class="contacts__schedule-text">
+                    Every day from 9:00 to 22:00
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
 
     <!----------------- FOOTER DONE---------------------->
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="footer__container container">
         <p class="footer__text">&#169; Copyright 2020</p>
         <ul class="soc-list list">
@@ -575,7 +824,7 @@
           </li>
         </ul>
       </div>
-    </footer> -->
-    <!-- <script src="./js/mobole-menu.js"></script> -->
+    </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

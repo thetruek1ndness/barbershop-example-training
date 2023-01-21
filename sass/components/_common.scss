@@ -85,7 +85,7 @@
   line-height: 1.17;
   letter-spacing: 0.05em;
 
-  @include desktop{
+  @include tablet{
     font-size: 42px;
   }
 }

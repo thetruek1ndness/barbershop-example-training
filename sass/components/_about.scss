@@ -3,17 +3,36 @@
 }
 
 .about__container {
-  display: flex;
+  @include tablet {
+    display: flex;
+    gap: 30px;
+  }
+
+  @include desktop {
+    padding-right: 100px;
+  }
 }
 
 .about__list {
-  display: flex;
-  gap: 30px;
+  display: none;
+
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex-shrink: 0;
+  }
+
+  @include desktop {
+    flex-direction: row;
+    flex-shrink: unset;
+  }
 }
 
 .about__wrap {
-  padding-left: 30px;
-  padding-right: 100px;
+  @include desktop {
+    max-width: 470px;
+  }
 }
 
 .about__suptitle {
@@ -22,6 +41,12 @@
 
 .about__title {
   color: var(--dark-text-color);
+
+  @media screen and (max-width: 1199px) {
+    max-width: 330px;
+    font-size: 28px;
+    line-height: 1.17;
+  }
 }
 
 .about__subtitle {
