@@ -25,7 +25,7 @@
 
     <header class="header">
       <div class="header__wrap container">
-        <a href="#" class="logo header__logo">
+        <a href="./index.html" class="logo header__logo">
           <svg class="logo__icon" width="69" height="55">
             <use href="./imgs/icons.svg#logo"></use>
           </svg>
@@ -52,9 +52,7 @@
           <a class="header__tel link" href="tel:+380441111111"
             >+38 044 111 11 11</a
           >
-          <button class="header__btn button" type="button">
-            online-booking
-          </button>
+          <a class="header__btn button" href="#booking"> online-booking </a>
         </div>
 
         <button class="mobile-menu__open-button" type="button" data-menu-open>
@@ -97,9 +95,9 @@
             <a class="mobile-menu__link link" href="tel:+380441111111"
               >+38 044 111 11 11</a
             >
-            <button class="mobile-menu__btn button" type="button">
+            <a class="mobile-menu__btn button" href="#booking">
               online-booking
-            </button>
+            </a>
           </div>
 
           <ul class="mobile-menu__soc-list list">
@@ -161,11 +159,6 @@
             </p>
           </div>
         </div>
-
-        <a class="goup-btn link" href="#top">
-          up
-        </a>
-
       </section>
 
       <!----------------- ABOUT DONE---------------------->
@@ -174,16 +167,48 @@
           <ul class="about__list list">
             <li class="about__item">
               <picture>
-                <source srcset="./imgs/about/about-01-tab.jpg 1x, ./imgs/about/about-01-tab@2.jpg 2x" media="(max-width: 1199px)" />
-                <source srcset="./imgs/about/about-01-desktop.jpg 1x, ./imgs/about/about-01-desktop@2.jpg 2x" media="(min-width: 1200px)" />
-                <img src="./imgs/about/about-01-tab.jpg" alt="barber shaving beard" width="330" />
+                <source
+                  srcset="
+                    ./imgs/about/about-01-tab.jpg   1x,
+                    ./imgs/about/about-01-tab@2.jpg 2x
+                  "
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./imgs/about/about-01-desktop.jpg   1x,
+                    ./imgs/about/about-01-desktop@2.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./imgs/about/about-01-tab.jpg"
+                  alt="barber shaving beard"
+                  width="330"
+                />
               </picture>
             </li>
             <li class="about__item">
               <picture>
-                <source srcset="./imgs/about/about-02-tab.jpg 1x, ./imgs/about/about-02-tab@2.jpg 2x" media="(max-width: 1199px)" />
-                <source srcset="./imgs/about/about-02-desktop.jpg 1x, ./imgs/about/about-02-desktop@2.jpg 2x" media="(min-width: 1200px)" />
-                <img src="./imgs/about/about-02-tab.jpg" alt="barber shaving beard" width="330" />
+                <source
+                  srcset="
+                    ./imgs/about/about-02-tab.jpg   1x,
+                    ./imgs/about/about-02-tab@2.jpg 2x
+                  "
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./imgs/about/about-02-desktop.jpg   1x,
+                    ./imgs/about/about-02-desktop@2.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./imgs/about/about-02-tab.jpg"
+                  alt="barber shaving beard"
+                  width="330"
+                />
               </picture>
             </li>
           </ul>
@@ -203,9 +228,7 @@
               always "on the same wave" with clients. Therefore, we are always
               ready to improve everyone who comes to us!
             </p>
-            <button class="about__button button" type="button" data-modal-open>
-              online-booking
-            </button>
+            <a class="about__button button" href="#booking"> online-booking </a>
           </div>
         </div>
       </section>
@@ -255,9 +278,7 @@
               </li>
             </ul>
           </div>
-          <button class="prices__button button" type="button" data-modal-open>
-            online-booking
-          </button>
+          <a class="prices__button button" href="#booking"> online-booking </a>
         </div>
       </section>
 
@@ -702,7 +723,7 @@
       <!----------------- BOOKING-CONTACTS DONE---------------------->
       <div class="booking-contacts">
         <div class="booking-contacts__container">
-          <section class="booking section">
+          <section class="booking section" id="booking">
             <div class="booking__container container">
               <h2 class="booking__title section__title">Online-booking</h2>
               <form class="form">
@@ -714,6 +735,7 @@
                       name="booking-name"
                       id="booking-name"
                       placeholder=" "
+                      minlength="2"
                       required
                     />
                     <label class="form__label label" for="booking-name"
@@ -728,6 +750,7 @@
                       name="booking-tel"
                       id="booking-tel"
                       placeholder=" "
+                      minlength="7"
                       required
                     />
                     <label class="form__label label" for="booking-tel"

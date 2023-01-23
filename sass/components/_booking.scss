@@ -84,6 +84,14 @@
   &:not(:placeholder-shown) {
     border-color: var(--bright-bg-color);
   }
+
+  &:not(:placeholder-shown):invalid {
+    border-color: rgb(179, 25, 25);
+  }
+
+  &:not(:placeholder-shown):valid {
+    border-color: rgb(21, 154, 78);
+  }
 }
 
 .form__input {
@@ -117,6 +125,14 @@
   .input:not(:placeholder-shown) + & {
     transform: translateY(-100%);
     color: var(--bright-text-color);
+  }
+
+  .input:not(:placeholder-shown):invalid + & {
+    color: rgb(179, 25, 25);
+  }
+
+  .input:not(:placeholder-shown):valid + & {
+    color: rgb(21, 154, 78);
   }
 }
 
