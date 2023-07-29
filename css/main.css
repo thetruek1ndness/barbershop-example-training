@@ -16,8 +16,7 @@
   --third-bg-color: #191c26;
   --bright-bg-color: #ffffff;
   /* transition */
-  --hft: 250ms ease
-  // gradient
+  --hft: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   --gradient: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2));
 }
 
@@ -484,8 +483,8 @@ body.no-scroll {
         -ms-flex-positive: 1;
             flex-grow: 1;
     padding: 272px 124px 237px 111px;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 28, 38, 0.2)), to(rgba(25, 28, 38, 0.2))), url(../../imgs/hero/hero-desktop.png);
-    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../../imgs/hero/hero-desktop.png);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 28, 38, 0.2)), to(rgba(25, 28, 38, 0.2))), url(../imgs/hero/hero-desktop.png);
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../imgs/hero/hero-desktop.png);
     max-width: 1070px;
     background-position: center;
     background-repeat: no-repeat;
@@ -1236,10 +1235,8 @@ body.no-scroll {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: rgba(157, 164, 189, 0.4);
-  -webkit-transition: color var(--hft), -webkit-transform var(--hft);
-  transition: color var(--hft), -webkit-transform var(--hft);
-  transition: transform var(--hft), color var(--hft);
-  transition: transform var(--hft), color var(--hft), -webkit-transform var(--hft);
+  -webkit-transition: all var(--hft);
+  transition: all var(--hft);
 }
 .input:not(:-moz-placeholder-shown) + .label {
   transform: translateY(-100%);
@@ -1299,7 +1296,7 @@ body.no-scroll {
 @media screen and (max-width: 1199px) {
   .contacts {
     background-color: var(--third-bg-color);
-    background-image: url(../../imgs/contacts/contacts-mob.png);
+    background-image: url(../imgs/contacts/contacts-mob.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1307,17 +1304,17 @@ body.no-scroll {
 }
 @media screen and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 1199px) and (min-resolution: 192dpi), screen and (max-width: 1199px) and (min-resolution: 2dppx) {
   .contacts {
-    background-image: url(../../imgs/contacts/contacts-mob@2.png);
+    background-image: url(../imgs/contacts/contacts-mob@2.png);
   }
 }
 @media screen and (max-width: 1199px) and (min-width: 768px) {
   .contacts {
-    background-image: url(../../imgs/contacts/contacts-tab.png);
+    background-image: url(../imgs/contacts/contacts-tab.png);
   }
 }
 @media screen and (max-width: 1199px) and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (max-width: 1199px) and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 1199px) and (min-width: 768px) and (min-resolution: 192dpi), screen and (max-width: 1199px) and (min-width: 768px) and (min-resolution: 2dppx) {
   .contacts {
-    background-image: url(../../imgs/contacts/contacts-tab@2.png);
+    background-image: url(../imgs/contacts/contacts-tab@2.png);
   }
 }
 @media screen and (min-width: 1200px) {

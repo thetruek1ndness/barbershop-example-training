@@ -5,8 +5,6 @@
     background-position: right;
     background-repeat: no-repeat;
     background-size: calc(50% - 15px);
-    // max-width: 1600px;
-    // margin: 0 auto;
   }
 }
 
@@ -118,7 +116,7 @@
   text-transform: uppercase;
   color: rgba(157, 164, 189, 0.4);
 
-  transition: transform var(--hft), color var(--hft);
+  transition: all var(--hft);
 
   .input:focus + &,
   .input:hover + &,

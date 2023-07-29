@@ -1,19 +1,19 @@
 .contacts {
   @media screen and (max-width:1199px){
     background-color: var(--third-bg-color);
-    background-image: url(../../imgs/contacts/contacts-mob.png);
+    background-image: url(../imgs/contacts/contacts-mob.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 
     @include retina {
-      background-image: url(../../imgs/contacts/contacts-mob@2.png);
+      background-image: url(../imgs/contacts/contacts-mob@2.png);
     }
   
     @include tablet {
-      background-image: url(../../imgs/contacts/contacts-tab.png);
+      background-image: url(../imgs/contacts/contacts-tab.png);
       @include retina {
-        background-image: url(../../imgs/contacts/contacts-tab@2.png);
+        background-image: url(../imgs/contacts/contacts-tab@2.png);
       }
     }
   }
